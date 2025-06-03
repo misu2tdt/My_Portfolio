@@ -5,5 +5,5 @@ If you would like to get in touch, please fill out the contact form available on
 
 Email : [tdtien7a1@gmail.com](mailto:tdtien7a1@gmail.com)
 
-Facebook: [Tran Duong Tien]([https://facebook.com](https://www.facebook.com/duongtien.tran.372))
+Facebook: [Tran Duong Tien](https://www.facebook.com/duongtien.tran.372)
 

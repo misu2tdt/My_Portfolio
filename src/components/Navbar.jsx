@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 export default function Navbar() {
   return (
@@ -6,10 +7,26 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <h1 className="text-xl font-bold">My Portfolio</h1>
         <ul className="flex space-x-6 font-medium">
-          <li><a href="#hero" className="hover:text-blue-500">Home</a></li>
-          <li><a href="#about" className="hover:text-blue-500">About</a></li>
-          <li><a href="#projects" className="hover:text-blue-500">Projects</a></li>
-          <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
+          <li>
+            <Link to="hero" smooth={true} duration={500} className="cursor-pointer hover:text-blue-500">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="about" smooth={true} duration={500} className="cursor-pointer hover:text-blue-500">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="projects" smooth={true} duration={500} className="cursor-pointer hover:text-blue-500">
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" smooth={true} duration={500} className="cursor-pointer hover:text-blue-500">
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

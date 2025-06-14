@@ -1,17 +1,5 @@
 import React from 'react';
-
-const projects = [
-  {
-    title: "Coffee Store Management",
-    description: "A full-stack app for managing a coffee shop, built with Node.js and PostgreSQL.",
-    link: "https://github.com/yourname/coffee-store"
-  },
-  {
-    title: "Portfolio Website",
-    description: "A personal portfolio website made with React, Tailwind, and Vite.",
-    link: "https://your-portfolio.vercel.app"
-  }
-];
+import projects from '../data/projects';
 
 export default function Projects() {
   return (
@@ -20,16 +8,10 @@ export default function Projects() {
         <h2 className="text-4xl font-bold mb-8">Projects</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((proj, i) => (
-            <div key={i} className="border p-4 rounded shadow">
-              <h3 className="text-2xl font-semibold">{proj.title}</h3>
-              <p className="my-2 text-gray-700">{proj.description}</p>
-              <a
-                href={proj.link}
-                className="text-blue-600 hover:underline"
-                target="_blank"
-              >
-                View Project →
-              </a>
+            <div key={i} className="border p-4 rounded shadow hover:scale-105 transition">
+              <h3 className="text-xl font-semibold">{proj.title}</h3>
+              <p className="my-2 text-gray-600">{proj.description}</p>
+              <a href={proj.link} target="_blank" className="text-blue-600 hover:underline">View Project on Github →</a>
             </div>
           ))}
         </div>

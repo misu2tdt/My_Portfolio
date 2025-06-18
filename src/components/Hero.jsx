@@ -8,14 +8,18 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex flex-col justify-center items-center text-white px-6 bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('/hero-bg.jpg')"
+        backgroundImage: "url('/hero.png')",
+        filter: "brightness(1.35)" 
       }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      {/* Overlay giúp dễ đọc text */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-0" />
+      {/* Overlay sáng nhẹ làm dịu nền */}
+      <div className="absolute inset-0 bg-white bg-opacity-10 z-0" />
+
+      {/* Overlay tối để tăng độ tương phản cho text */}
+      <div className="absolute inset-0 bg-black bg-opacity-30 z-0" />
 
       <div className="relative z-10 text-center">
         <motion.h1
@@ -32,9 +36,9 @@ export default function Hero() {
             sequence={[
               'Software Developer',
               2000,
-              'React Enthusiast',
+              'Ho Chi Minh University of Technology',
               2000,
-              'Problem Solver',
+              'VietNam National University',
               2000,
             ]}
             wrapper="span"
